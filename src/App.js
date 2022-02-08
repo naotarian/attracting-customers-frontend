@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from './logo.svg'
+import './App.css'
+import styled from 'styled-components'
+import Grid from '@mui/material/Grid'
+//components
+import Top from './components/Pages/Top'
+import MoveHeader from './components/Parts/MoveHeader'
+
+const WrapeprGrid = styled(Grid)`
+  margin: 0;
+  padding: 0;
+  width: 100%;
+`
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <WrapeprGrid>
+      <MoveHeader />
+      <Top />
+    </WrapeprGrid>
   );
 }
 
-export default App;
+export default App
